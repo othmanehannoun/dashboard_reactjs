@@ -1,0 +1,54 @@
+.users{
+    padding: 10px 35px;
+}
+
+.table-hover{
+    cursor: pointer;
+}
+.card-table{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-header {
+    padding: 10px 10px;
+    margin-bottom: 0;
+    background-color: #a10020;
+    border-bottom: 2px solid #3498db;
+    top: -30px;
+}
+
+.card-header:first-child {
+    border-radius: 5px;
+}
+
+.card-body{
+    padding: 0px 20px !important;
+}
+.MuiPaper-elevation1 {
+    box-shadow: none !important
+}
+ 
+tr {
+ height: 40px !important;
+}
+
+th {
+    max-width: 125px;
+    min-width: 125px;
+    /* padding: 0 !important; */
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+td {
+    padding: 10px !important;
+    text-align: center !important;
+}

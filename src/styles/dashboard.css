@@ -1,0 +1,41 @@
+.dashboard{
+    /* background-color: blueviolet; */
+    padding: 20px;
+    width: 100%;
+}
+.dashboard__cards {
+    margin-bottom: 10px;
+}
+.single__card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card__content h4 {
+    color: var(--heading-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card__content span {
+    color: var(--heading-color);
+    font-size: 2rem;
+}
+
+.card__icon {
+    font-size: 2rem;
+    font-weight: 400 !important;
+    color: rgba(255, 255, 255, 0.845);
+
+}
+
+
+
+
+
+  
+  
