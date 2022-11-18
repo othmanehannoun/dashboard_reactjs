@@ -1,0 +1,24 @@
+.pudget{
+    padding: 10px 20px;
+}
+
+.btn-edit {
+    font-size: 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #ffffff00;
+    color: #0fbcf9;
+}
+.btn-edit:hover{
+    color: rgb(0, 127, 196);
+}
+
+.btn-delete {
+    font-size: 20px;
+    border: none;
+    background-color: #ffffff00;
+    color: red;
+}
+.btn-delete:hover{
+    color: rgb(136, 0, 11);
+}

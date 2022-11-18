@@ -31,7 +31,8 @@ export const menuItems = [
       { name: "Ajouter", to: "/admin/ajouter", iconClassName: "bi bi-people"},
     ],
   },
-  { name: "users", to: `/users`, iconClassName: "bi bi-people" },
+  { name: "Users", to: `/users`, iconClassName: "bi bi-people" },
+  { name: "Pudget", to: `/pudget`, iconClassName: "bi bi-cash-coin" },
   { name: "Setting", to: `/setting`, iconClassName: "bi bi-gear" },
   { name: "LogOut", to: `/logout`, iconClassName: "bi bi-box-arrow-right" },
   

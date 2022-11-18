@@ -1,5 +1,5 @@
 .users{
-    padding: 10px 35px;
+    padding: 10px 20px;
 }
 
 .table-hover{
@@ -19,8 +19,9 @@
 .card-header {
     padding: 10px 10px;
     margin-bottom: 0;
-    background-color: #a10020;
-    border-bottom: 2px solid #3498db;
+    /* background-color: #a10020; */
+    background-image: linear-gradient(rgb(255 35 35), var( --primary-color));
+    /* border-bottom: 2px solid #3498db; */
     top: -30px;
 }
 

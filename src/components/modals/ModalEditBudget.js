@@ -5,13 +5,9 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-// import { Link } from 'react-router-dom';
 
 import { Grid, TextField, makeStyles  } from '@material-ui/core';
 
-// import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
-
-import '../../styles/Modal_css/showUser.css'
 
 const useStyles = makeStyles(theme => ({
 
@@ -34,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-export const ModalShowUser = ({open, handleClose, scroll, descriptionElementRef, userId}) => {
+export const ModalEditBudget = ({open, handleClose, scroll, descriptionElementRef, id}) => {
 
     const classes = useStyles();
     
@@ -51,14 +47,14 @@ export const ModalShowUser = ({open, handleClose, scroll, descriptionElementRef,
                 backgrounColor: "red"
             }}
         >
-            <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
+            <DialogTitle id="scroll-dialog-title">Modifier budget</DialogTitle>
             <DialogContent dividers={scroll === 'paper'}>
             <DialogContentText
                 id="scroll-dialog-description"
                 ref={descriptionElementRef}
                 tabIndex={-1}
             >
-                <p>user id : {userId}</p>
+                <p>budget id : {id}</p>
                 <form className="">
                     <Grid container>
                         <Grid item xs={6} style={{ padding: '10px' }}>
@@ -66,80 +62,40 @@ export const ModalShowUser = ({open, handleClose, scroll, descriptionElementRef,
                             id="name"
                             label="Nom"
                             className={classes.textField}
-                            value={"Hannoune"}
+                            value={"Budget 1"}
                             // onChange={this.handle_change('form_email')}
                             margin="normal"
                             inputProps={{style: { color: 'rgb(50, 50, 50)' }}}
-                            disabled={true}
+                            // disabled={true}
                         />
-
-                        <TextField
-                            id="Adress"
-                            label="Adress"
-                            className={classes.textField}
-                            value={"Safi, Moroco"}
-                            // onChange={this.handle_change('form_email')}
-                            margin="normal"
-                            inputProps={{style: { color: 'rgb(50, 50, 50)' }}}
-                            disabled={true}
-                        />
-
-
 
                         </Grid>
                         <Grid item xs={6} style={{ padding: '10px' }}>
                         <TextField
-                            id="name"
-                            label="Prenom"
+                            id="price"
+                            label="Price"
                             className={classes.textField}
-                            value={"Othmane"}
+                            value={"1000"}
                             // onChange={this.handle_change('form_email')}
                             margin="normal"
                             inputProps={{style: { color: 'rgb(50, 50, 50)' }}}
                             // InputProps={{
                             //     className: classes.input,
                             // }}
-                            disabled={true}
+                            // disabled={true}
                         />
 
-                        <TextField
-                            id="dateNaissance"
-                            label="Date de naissance"
-                            className={classes.textField}
-                            value={"17 / 11 / 1998"}
-                            // onChange={this.handle_change('form_email')}
-                            margin="normal"
-                            inputProps={{style: { color: 'rgb(50, 50, 50)' }}}
-                            disabled={true}
-                        />
+                       
                         
                         </Grid>
-                        <Grid item xs={12} style={{ padding: '10px' }}>
-
-                            <div className="divfile">
-                                <div className="fileName" style={{marginTop: "10px"}}>
-                                    <i class="bi bi-file-text">passport.pdf</i>
-                                </div>
-                                <div style={{marginTop: "5px"}}>
-                                    <a className="downloadFileIcon" href='http://localhost:3001/public/uploads/doc2.docx' target='_blank'>
-                                        <i class="bi bi-cloud-download"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        {/* <DocViewer
-                            pluginRenderers={DocViewerRenderers}
-                            documents={docs}
-                          
-                            style={{ height: 500 }}
-                        /> */}
-                        </Grid>
+                        
                     </Grid>
                 </form>
             </DialogContentText>
             </DialogContent>
             <DialogActions>
                 <Button onClick={handleClose}>Cancel</Button>
-            {/* <Button onClick={handleClose}>Subscribe</Button> */}
+                <Button onClick={handleClose}>Edit</Button>
             </DialogActions>
         </Dialog>
     </div>

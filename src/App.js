@@ -8,6 +8,7 @@ import Dashboard from "./screens/Dashboard"
 import Users from "./screens/Users"
 import Admin from "./screens/Admin";
 import AppHeader from "./components/AppHeader";
+import Pudget from "./screens/Budget";
 const ShowAdmins = () => <h3>Admin/Welcome to page show All admin</h3>;
 const AddAdmin = () => <h3>Admin/Welcome to page ADD admin</h3>;
 const Videos = () => <h3>Setting</h3>;
@@ -44,6 +45,8 @@ function App() {
               <Route path={"/admin/afficher"}><ShowAdmins /> </Route>
 
               <Route path={"/admin/ajouter"}><AddAdmin /> </Route>
+
+              <Route path={"/pudget"}><Pudget /> </Route>
 
               <Route path={"/setting"}><Videos /> </Route>
 
